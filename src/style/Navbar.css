@@ -1,0 +1,46 @@
+.nav-container{
+    height: 75px;
+    width: 100%;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    position: fixed;
+}
+
+.hamburger-container{
+    height: 100%;
+    width: 25%;
+    border: 1px solid black;
+    background-color: black;
+
+}
+
+.masthead-container{
+    height: 100%;
+    width: 50%;
+    border: 1px solid black;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.masthead-container img{
+    height: 73px;
+}
+
+.contact-container{
+    height: 100%;
+    width: 25%;
+    border: 1px solid black;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-margin{
+    height: 1000px;
+    width: 100px;
+    border: black solid 1px;
+}
