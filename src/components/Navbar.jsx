@@ -10,7 +10,7 @@ export default function Navbar() {
     <div className="hamburger-container">
         <div className="copy-container">
         <h1>Full Stack Web Development</h1>
-        <h1>Digital Communications Strategy</h1>
+        <h1>Digital Comms Strategy</h1>
         </div>
     </div>
     <div className="masthead-container">

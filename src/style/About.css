@@ -2,17 +2,36 @@
     display: flex;
     height: 500px;
     width: 100%;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 .profile-picture-container {
-    border: black 1px solid;
+    /* border: black 1px solid; */
+    height: 500px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture-container img {
+    height: 450px;
+    border-radius: 15px;
+
+}
+
+.overview-copy-container {
+    /* border: black 1px solid; */
     height: 500px;
     width: 50%;
 }
 
-.overview-copy-container {
-    border: black 1px solid;
-    height: 500px;
-    width: 50%;
+.overview-headline {
+    margin-top: 20px;
+}
+
+.overview-body {
+    margin-top: 16px;
+    width: 525px;
+    font-size: 15px;
 }
