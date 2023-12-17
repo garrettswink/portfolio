@@ -7,15 +7,18 @@ export default function Navbar() {
     return (
 <>
 <div className="nav-container">
-    <div className="hamburger-container"></div>
+    <div className="hamburger-container">
+        <div className="copy-container">
+        <h1>Full Stack Web Development</h1>
+        <h1>Digital Communications Strategy</h1>
+        </div>
+    </div>
     <div className="masthead-container">
          <img src={masthead} />
     </div>
     <div className="contact-container"><button type="button" class="btn btn-outline-danger">Contact Me</button>
 </div>
     </div>
-
-<div className="left-margin"></div>
 </>
     )
 }

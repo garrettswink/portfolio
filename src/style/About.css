@@ -1,0 +1,18 @@
+.about-container{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    border: 1px black solid;
+}
+
+.profile-picture-container {
+    border: black 1px solid;
+    height: 500px;
+    width: 50%;
+}
+
+.overview-copy-container {
+    border: black 1px solid;
+    height: 500px;
+    width: 50%;
+}
