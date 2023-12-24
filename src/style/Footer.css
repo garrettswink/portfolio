@@ -1,0 +1,42 @@
+.footer-container{
+    border: 1px solid black;
+    height: 75px;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+}
+
+.social-media-container{
+    border: 1px solid black;
+    height: 75px;
+    width: 30%;
+    background-color: black;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.social-media-icon {
+    height: 50px;
+    width: auto;
+    margin: 0 20px;
+}
+
+.copyright-container{
+    border: 1px solid black;
+    height: 75px;
+    width: 40%;
+    background-color: black;
+    color: white;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container{
+    border: 1px solid black;
+    height: 75px;
+    width: 30%;
+    background-color: black;
+}
