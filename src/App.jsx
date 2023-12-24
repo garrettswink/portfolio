@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import './style/App.css'
 import About from './components/About'
 import Mern from './components/Mern'
+import Programming from './components/Programming'
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
     <Navbar />
     <About />
     <Mern />
+    <Programming />
   </>
   );
 }

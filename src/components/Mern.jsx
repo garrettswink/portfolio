@@ -26,7 +26,7 @@ export default function Mern() {
           <MernCard
             title="React"
             logo={ReactLogo}
-            description="I desgin interactive and user-friendly user interfaces in React, utilizing state management, component lifecycles, and 3rd libraries to enhance the overall user experience."
+            description="I desgin interactive and user-friendly user interfaces in React, utilizing state management, component lifecycles, and third party libraries to enhance the overall user experience."
           />
           <MernCard
             title="Node"
