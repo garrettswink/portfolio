@@ -1,22 +1,24 @@
-import Navbar from './components/Navbar';
-import './style/App.css'
-import About from './components/About'
-import Mern from './components/Mern'
-import Programming from './components/Programming'
-import Footer from './components/Footer'
-import Agency from './components/Agency'
+import "./style/App.css";
+
+import { Route, Routes } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+import Landing from "./pages/LandingPage";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return (
-  <>
-    <Navbar />
-    <About />
-    <Mern />
-    <Programming />
-    <Agency />
-    <Footer />
-  </>
+    <>
+      <Navbar />
+      <div className="route-container">
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
+    </>
   );
 }
-
-

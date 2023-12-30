@@ -1,4 +1,3 @@
-// Contact.jsx
 import "../style/Contact.css";
 import Form from "react-bootstrap/Form";
 import Button from 'react-bootstrap/Button';
@@ -36,51 +35,15 @@ export default function Contact() {
               <Form.Control as="textarea" rows={8} />
             </Form.Group>
           </Form>
-          <Button variant="danger">Submit</Button>
         </div>
+
+        <div className="contact-form-button-container">
+        <Button variant="danger">Submit</Button>
+        </div>
+
+
+
       </div>
     </>
   );
 }
-
-
-// Contact.css
-.contact-container {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.contact-header-container {
-  border: 1px solid black;
-  height: 50px;
-  width: 500px;
- 
-  text-align: center;
-  border-top: black solid 1px;
-  border-bottom: black solid 1px;
-  border-left: none;
-  border-right: none;
-}
-
-.contact-overview-container {
-  border: 1px solid black;
-  height:80px;
-  width: 800px;
-  margin-top: 50px;
-}
-
-.contact-form-container {
-  border: 1px black solid;
-  height: 400px;
-  width: 800px;
-  margin-top: 50px;
-}
-
-// Prompt
-How do i center my button in the form div
-Without disrupting the rest of my layout

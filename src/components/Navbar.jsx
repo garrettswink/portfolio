@@ -16,7 +16,7 @@ export default function Navbar() {
     <div className="masthead-container">
          <img src={masthead} />
     </div>
-    <div className="contact-container"><button type="button" class="btn btn-outline-danger">Contact Me</button>
+    <div className="contact-button-container"><button type="button" class="btn btn-outline-danger">Contact Me</button>
 </div>
     </div>
 </>
