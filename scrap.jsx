@@ -1,86 +1,46 @@
-// Contact.jsx
-import "../style/Contact.css";
-import Form from "react-bootstrap/Form";
-import Button from 'react-bootstrap/Button';
+import "../style/Navbar.css";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import masthead from "../assets/masthead.gif";
 
+export default function Navbar() {
+    
+  const navigate = useNavigate();
 
-export default function Contact() {
+  const handleContactClick = () => {
+    navigate("/contact");
+  };
+
   return (
     <>
-      <div className="contact-container">
-        <div className="contact-header-container">
-          <h1>Contact Me</h1>
+      <div className="nav-container">
+        <div className="hamburger-container">
+          <div className="copy-container">
+            <h1>Full Stack Web Development</h1>
+            <h1>Digital Comms Strategy</h1>
+          </div>
         </div>
-
-        <div className="contact-overview-container">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
-            reprehenderit vero eius cum nesciunt saepe sint, consectetur quis
-            animi nemo ipsum laboriosam. Necessitatibus tempora porro aliquid
-            consequatur. Deleniti praesentium ratione temporibus aliquid
-            repudiandae, excepturi iure incidunt possimus, magni sit?
-          </p>
+        <div className="masthead-container">
+          <img src={masthead} />
         </div>
-
-        <div className="contact-form-container">
-          <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="name@example.com" />
-            </Form.Group>
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows={8} />
-            </Form.Group>
-          </Form>
-          <Button variant="danger">Submit</Button>
+        <div className="contact-button-container">
+          <button
+            type="button"
+            class="btn btn-outline-danger"
+            onClick={handleContactClick}>
+            Contact Me
+          </button>
         </div>
       </div>
     </>
   );
 }
 
-
-// Contact.css
-.contact-container {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.contact-header-container {
-  border: 1px solid black;
-  height: 50px;
-  width: 500px;
- 
-  text-align: center;
-  border-top: black solid 1px;
-  border-bottom: black solid 1px;
-  border-left: none;
-  border-right: none;
-}
-
-.contact-overview-container {
-  border: 1px solid black;
-  height:80px;
-  width: 800px;
-  margin-top: 50px;
-}
-
-.contact-form-container {
-  border: 1px black solid;
-  height: 400px;
-  width: 800px;
-  margin-top: 50px;
-}
-
-// Prompt
-How do i center my button in the form div
-Without disrupting the rest of my layout
+// I have updated the code but it is not functioning properly
+// When on the / page. I want the button in the Navbar to say Contact Me
+// When the button is clicked, I want it to take the user to the /contact page
+// When on the contact page
+// I want the button text to say Overview
+// When the button is clicked
+// I want it to take the user back to the / page
