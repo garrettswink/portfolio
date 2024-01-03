@@ -16,20 +16,27 @@ app.get("/", (req, res) => {
   res.send("Home Page");
 });
 
+// Route test: http://localhost:3001/api/sendemail
 app.post("/api/sendemail", async (req, res) => {
   const { email } = req.body;
 
+//   Update this to match the sendEmail function in the utils folder 
+//   Likely need to uupdate the below based on what I'm trying to accomplish
+//   Sent_to => Outlook
+//   Send_from => Same? Not sure...
+//   Strike reply_to
   try {
+    
     const send_to = email;
     const sent_from = process.env.EMAIL_USER;
-    const reply_to = email;
-    const subject = "Thank You Message From NodeCourse";
+    const reply_to = "garrettswink.test@outlook.com";
+    const subject = email;
     const message = `
-        <h3>Hello Zino</h3>
-        <p>Thank for your YouTube Tutorials</p>
-        <p>Regards...</p>
+        <h3>This is a test</h3>
+        <p>To see if a message can be successfully sent.</p>
     `;
 
+    // Will need to update parameters 
     await sendEmail(subject, message, send_to, sent_from, reply_to);
     res.status(200).json({ success: true, message: "Email Sent" });
   } catch (error) {
