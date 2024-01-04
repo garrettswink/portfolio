@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 // Adjust parameters. Likely remove reply_to, but maybe also sent_from
 // Remember to make argument + function adjustments to match the parameters
 // You will need to adjust the post req in the app.js file too
-const sendEmail = async (subject, message, send_to, sent_from, reply_to) => {
+const sendEmail = async (subject, message, send_to, sent_from) => {
 
 // Create the transporter
   const transporter = nodemailer.createTransport({
@@ -28,7 +28,6 @@ const sendEmail = async (subject, message, send_to, sent_from, reply_to) => {
   const options = {
     from: sent_from,
     to: send_to,
-    replyTo: reply_to,
     subject: subject,
     html: message,
   };

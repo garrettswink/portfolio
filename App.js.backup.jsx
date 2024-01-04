@@ -20,10 +20,16 @@ app.get("/", (req, res) => {
 app.post("/api/sendemail", async (req, res) => {
   const { email } = req.body;
 
+//   Update this to match the sendEmail function in the utils folder 
+//   Likely need to uupdate the below based on what I'm trying to accomplish
+//   Sent_to => Outlook
+//   Send_from => Same? Not sure...
+//   Strike reply_to
   try {
     
     const send_to = email;
     const sent_from = process.env.EMAIL_USER;
+    const reply_to = "garrettswink.test@outlook.com";
     const subject = email;
     const message = `
         <h3>This is a test</h3>
@@ -31,7 +37,7 @@ app.post("/api/sendemail", async (req, res) => {
     `;
 
     // Will need to update parameters 
-    await sendEmail(subject, message, send_to, sent_from);
+    await sendEmail(subject, message, send_to, sent_from, reply_to);
     res.status(200).json({ success: true, message: "Email Sent" });
   } catch (error) {
     res.status(500).json(error.message);

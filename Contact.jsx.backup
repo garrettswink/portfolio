@@ -1,30 +1,12 @@
+// Backup Contact.jsx in case I fuck everything up
+
+
 import "../style/Contact.css";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import { useState } from "react";
-import axios from "axios";
+import Button from 'react-bootstrap/Button';
+
 
 export default function Contact() {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const sendEmail = async (e) => {
-    e.preventDefault();
-    const data = {
-      email,
-      message,
-    };
-
-    try {
-      const response = await axios.post(
-        "http://localhost:3001/api/sendemail",
-        data
-      );
-      console.log(response.data);
-    } catch (error) {
-      console.error("Error sending email:", error);
-    }
-  };
 
   return (
     <>
@@ -44,37 +26,27 @@ export default function Contact() {
         </div>
 
         <div className="contact-form-container">
-          <Form onSubmit={sendEmail}>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form>
+            <Form.Group 
+            className="mb-3" 
+            controlId="exampleForm.ControlInput1">
               <Form.Label>Email address:</Form.Label>
-              <Form.Control
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="name@example.com"
-              />
+              <Form.Control type="email" placeholder="name@example.com" />
             </Form.Group>
-
             <Form.Group
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
             >
               <Form.Label>Message:</Form.Label>
-              <Form.Control 
-              as="textarea" 
-              rows={8} 
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              />
+              <Form.Control as="textarea" rows={8} />
             </Form.Group>
           </Form>
         </div>
-        {/* 🔥🔥🔥Button🔥🔥🔥 */}
+
         <div className="contact-form-button-container">
-          <Button variant="danger" type="submit">
-            Submit
-          </Button>
+        <Button variant="danger">Submit</Button>
         </div>
+
       </div>
     </>
   );
