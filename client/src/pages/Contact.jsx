@@ -67,14 +67,15 @@ export default function Contact() {
               onChange={(e) => setMessage(e.target.value)}
               />
             </Form.Group>
-          </Form>
-        </div>
-        {/* 🔥🔥🔥Button🔥🔥🔥 */}
+            {/* 🔥🔥🔥Button🔥🔥🔥 */}
         <div className="contact-form-button-container">
           <Button variant="danger" type="submit">
             Submit
           </Button>
         </div>
+          </Form>
+        </div>
+        
       </div>
     </>
   );

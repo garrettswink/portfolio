@@ -18,20 +18,32 @@ app.get("/", (req, res) => {
 
 // Route test: http://localhost:3001/api/sendemail
 app.post("/api/sendemail", async (req, res) => {
-  const { email } = req.body;
+  const { email, message } = req.body;
 
   try {
-    
-    const send_to = email;
+   
+    const send_to = process.env.EMAIL_USER;
+     // I want sent_to to stay the same.
+    // The message comes to the correct Outlook inbox
+ 
     const sent_from = process.env.EMAIL_USER;
-    const subject = email;
-    const message = `
-        <h3>This is a test</h3>
-        <p>To see if a message can be successfully sent.</p>
-    `;
+    // I want the sent_from updated 
+    // So that it is from the email address provided
+    // In the Contact.jsx form's email input
 
-    // Will need to update parameters 
-    await sendEmail(subject, message, send_to, sent_from);
+    const subject = "ALERT!!! A New Portfolio Inquiry";
+    // I want this hard coded to "Portfolio Contact Inquiry"
+
+    const emailContent = `
+        <h3>This message is from ${email}</h3>
+        <p>${message}</p>
+    `;
+    // The user input message does come through here. 
+    // But I don't need this test language.
+    // But i don't want to break my code.
+    // Should this be an empty string?
+
+    await sendEmail(subject, emailContent, send_to, sent_from);
     res.status(200).json({ success: true, message: "Email Sent" });
   } catch (error) {
     res.status(500).json(error.message);

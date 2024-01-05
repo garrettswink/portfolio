@@ -20,24 +20,30 @@ app.get("/", (req, res) => {
 app.post("/api/sendemail", async (req, res) => {
   const { email } = req.body;
 
-//   Update this to match the sendEmail function in the utils folder 
-//   Likely need to uupdate the below based on what I'm trying to accomplish
-//   Sent_to => Outlook
-//   Send_from => Same? Not sure...
-//   Strike reply_to
   try {
-    
+   
     const send_to = email;
+     // I want sent_to to stay the same.
+    // The message comes to the correct Outlook inbox
+ 
     const sent_from = process.env.EMAIL_USER;
-    const reply_to = "garrettswink.test@outlook.com";
+    // I want the sent_from updated 
+    // So that it is from the email address provided
+    // In the Contact.jsx form's email input
+
     const subject = email;
+    // I want this hard coded to "Portfolio Contact Inquiry"
+
     const message = `
         <h3>This is a test</h3>
         <p>To see if a message can be successfully sent.</p>
     `;
+    // The user input message does come through here. 
+    // But I don't need this test language.
+    // But i don't want to break my code.
+    // Should this be an empty string?
 
-    // Will need to update parameters 
-    await sendEmail(subject, message, send_to, sent_from, reply_to);
+    await sendEmail(subject, message, send_to, sent_from);
     res.status(200).json({ success: true, message: "Email Sent" });
   } catch (error) {
     res.status(500).json(error.message);
