@@ -1,7 +1,7 @@
 import "../style/Programming.css"
 import MernCard from "../components/MernCard"
-import Python from "../assets/python2.jpg"
-import SQL from "../assets/sql.jpg"
+import Python from "../assets/python2.png"
+import SQL from "../assets/sql.png"
 import Django from "../assets/django.png"
 import MySQL from "../assets/MySQL-Logo.jpg"
 
@@ -12,6 +12,11 @@ export default function Additional(){
             <div className="programming-header">
                 <h1>Data + Programming Capabilities</h1>
             </div>
+
+            <div className="programming-summary">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
             <div className="programming-body">
                <MernCard 
                title="Python"

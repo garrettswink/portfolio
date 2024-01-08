@@ -1,5 +1,5 @@
 .mern-card-body {
-    position: relative; /
+    position: relative; 
     border: 1px black solid;
     height: 250px;
     width: 250px;
@@ -47,6 +47,10 @@
 .mern-card-image:hover .mern-card-description {
     opacity: 1;
     visibility: visible; /* Make visible on hover */
+}
+
+.mern-card-image:hover img {
+    opacity: 0;
 }
 
 .mern-card-title {

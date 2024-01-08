@@ -1,38 +1,33 @@
-.agency-experience-container {
-    height: 500px;
-    width: 100%;
+.integrated-container {
     display: flex; 
     justify-content: center; 
     align-items: center; 
     flex-direction: column; 
-    margin-bottom: 200px;
+    height: 500px;
+    width: 100%; 
     margin-top: 150px;
-   
-   
 }
 
-.agency-experience-header {
+.integrated-header {
     border-top: black solid 1px;
     border-bottom: black solid 1px;
+    border-left: none;
+    border-right: none;
     height: 50px;
     width: 700px;
-    margin-bottom: 20px; 
     text-align: center;
 }
 
-.agency-summary {
+.integrated-summary {
     margin: 50px;
     width: 900px;
     height: 300px;
 }
 
-
-.agency-experience-body {
-    height: 300px;
+.integrated-body {
+    height: 500px;
     width: 1000px;
-    margin-top: 20px;
+    margin: 10px; 
+   display: flex;
 }
 
-.accordion-body{
-    background-color: whitesmoke;
-}

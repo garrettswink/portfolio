@@ -3,11 +3,10 @@
     justify-content: center; 
     align-items: center; 
     flex-direction: column; 
-    height: 350px;
+    height: 500px;
     width: 100%; 
     margin-top: 50px;
 }
-
 
 .mern-header {
     border-top: black solid 1px;
@@ -19,37 +18,19 @@
     text-align: center;
 }
 
+.mern-summary {
+    margin: 50px;
+    width: 900px;
+    height: 300px;
+}
+
 .mern-body {
-    /* border: black solid 1px; */
     height: 1000px;
     width: 1000px;
     margin: 10px; 
-    /* background-color: grey; */
-   margin-top: 50px;
    display: flex;
 }
 
 
-.mern-card-description {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    padding: 10px;
-}
 
-.mern-card-image:hover img {
-    opacity: 0;
-}
 
-.mern-card-image:hover .mern-card-description {
-    opacity: 1;
-}

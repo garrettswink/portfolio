@@ -1,17 +1,23 @@
 import "../style/Mern.css";
 import MernCard from "../components/MernCard.jsx";
 import MongoLogo from "../assets/mongo_logo.jpg";
-import ExpressLogo from "../assets/express-js.png";
-import ReactLogo from "../assets/react-logo-2.png";
-import NodeLogo from "../assets/node_logo.jpg";
+import ExpressLogo from "../assets/express.png";
+import ReactLogo from "../assets/react.png";
+import NodeLogo from "../assets/node.png";
 
 export default function Mern() {
   return (
     <>
       <div className="mern-container">
+
         <div className="mern-header">
           <h1>MERN Stack Proficiency</h1>
         </div>
+
+        <div className="mern-summary">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        
         <div className="mern-body">
           <MernCard
             title="MongoDB"
