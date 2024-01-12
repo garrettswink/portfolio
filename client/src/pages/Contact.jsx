@@ -3,10 +3,13 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
 import axios from "axios";
+import Notification from "../components/Notification";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [showNotification, setShowNotification] = useState(false);
+  const [notificationMessage, setNotificationMessage] = useState("");
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -24,8 +27,12 @@ export default function Contact() {
 
       setEmail("");
       setMessage("");
+      setShowNotification(true);
+      setNotificationMessage("Message sent successfully!");
     } catch (error) {
       console.error("Error sending email:", error);
+      setShowNotification(true);
+      setNotificationMessage("Error sending email. Please try again later.");
     }
   };
 
@@ -72,7 +79,7 @@ export default function Contact() {
         </div>
           </Form>
         </div>
-        
+        <Notification show={showNotification} message={notificationMessage} />
       </div>
     </>
   );
