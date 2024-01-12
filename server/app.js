@@ -21,19 +21,14 @@ app.post("/api/sendemail", async (req, res) => {
   const { email, message } = req.body;
 
   try {
-   
     const send_to = process.env.EMAIL_USER;
- 
     const sent_from = process.env.EMAIL_USER;
-
     const subject = "ALERT!!! A New Portfolio Inquiry";
-
     const emailContent = `
         <h3>This message is from ${email}</h3>
         <p>${message}</p>
     `;
   
-
     await sendEmail(subject, emailContent, send_to, sent_from);
     res.status(200).json({ success: true, message: "Email Sent" });
   } catch (error) {
