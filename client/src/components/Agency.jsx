@@ -9,7 +9,7 @@ export default function Agency(){
                 <h1>10+ Years of Agency Experience</h1>
             </div>
 
-          <div className="agency-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div className="agency-summary">With over a decade of experience working with some of the largest companies and most popular brands, I have honed a client management style emphasizing clear communication, comprehensive strategy documents, thorough reporting, and a drive to exceed client expectations.</div>
 
             <div className="agency-experience-body">
             <Accordion defaultActiveKey="0">
@@ -17,28 +17,35 @@ export default function Agency(){
         <Accordion.Header><strong>We Communications - Director of Content & Channel Strategy</strong></Accordion.Header>
         <Accordion.Body>
        <p><strong>Clients:</strong> Microsoft, Intel, Brother, Alteryx</p>
-       <p><strong>Work Summary: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor, ligula non varius dictum, tortor justo convallis ex, non tincidunt metus justo in metus. Nullam iaculis, dolor a bibendum bibendum, elit velit fringilla odio, vel facilisis elit orci nec elit. Nullam auctor elit quis tortor semper, id malesuada arcu luctus. Integer euismod justo a ligula gravida, at convallis dolor dictum. Sed in turpis vel urna egestas tincidunt eget id tortor. Vivamus consectetur justo sed feugiat pellentesque.</p>
+       <p>Conducted thorough audits of digital communications channels for Intel and Alteryx, providing guidance for organic content and amplification strategies.</p>
+        <p>Implemented a b2b marketing program with Microsoft, showcasing cloud solutions for small and medium businesses. </p>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
         <Accordion.Header><strong>Ketchum - Managing Account Supervisor</strong></Accordion.Header>
         <Accordion.Body>
           <p><strong>Clients:</strong> Nestlé, Tyson Foods, ExxonMobile, Ardent Mills, Corteva, Bunge</p>
-          <p><strong>Work Summary:</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor, ligula non varius dictum, tortor justo convallis ex, non tincidunt metus justo in metus. Nullam iaculis, dolor a bibendum bibendum, elit velit fringilla odio, vel facilisis elit orci nec elit. Nullam auctor elit quis tortor semper, id malesuada arcu luctus. Integer euismod justo a ligula gravida, at convallis dolor dictum. Sed in turpis vel urna egestas tincidunt eget id tortor. Vivamus consectetur justo sed feugiat pellentesque.</p>
+          <p>Oversaw the development, quarterly refresh, and overall maintenance of b2b websites for Nestlé and Ardent Mills.</p>
+          <p>Directed paid digital advertising, organic and social media, and customer outreach email programs for both clients, driving audiences to key landing pages for purchases and other key conversions.  </p>
+          <p>Researched best practices, oversaw creative direction, and implemented Nestlé Coffee mate’s Amazon storefront and in-platform advertising. </p>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
         <Accordion.Header><strong>GMMB - Managing Account Supervisor</strong></Accordion.Header>
         <Accordion.Body>
           <p><strong>Clients:</strong> American Beverage Association, Fiat Chrysler Automobiles, United Health Group</p>
-          <p><strong>Work Summary:</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor, ligula non varius dictum, tortor justo convallis ex, non tincidunt metus justo in metus. Nullam iaculis, dolor a bibendum bibendum, elit velit fringilla odio, vel facilisis elit orci nec elit. Nullam auctor elit quis tortor semper, id malesuada arcu luctus. Integer euismod justo a ligula gravida, at convallis dolor dictum. Sed in turpis vel urna egestas tincidunt eget id tortor. Vivamus consectetur justo sed feugiat pellentesque.</p>
+          <p>Directed the build and maintenance of public affairs websites for American Beverage Association and Fiat Chrysler, in addition to the creative development of a complimenting paid media efforts, which included organic and boosted social media. </p>
+          <p>For the development of Fiat Chrysler's CheckToProtect.org website, I worked with key stake holders to implement an API which allowed users to check the status of their vehicle safety while assuring the security of their personal data. </p>
+          <p>Oversaw an extensive national paid media program for United Health Group, which included social media, banner placement on tier 1 news websites, IoT advertising, and digital billboards for national airports. </p>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="3">
         <Accordion.Header><strong>Goddard Gunster - Account Manager</strong></Accordion.Header>
         <Accordion.Body>
           <p><strong>Clients:</strong> American Beverage Association, The Coca-Cola Company, Walmart</p>
-          <p><strong>Work Experience:</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor, ligula non varius dictum, tortor justo convallis ex, non tincidunt metus justo in metus. Nullam iaculis, dolor a bibendum bibendum, elit velit fringilla odio, vel facilisis elit orci nec elit. Nullam auctor elit quis tortor semper, id malesuada arcu luctus. Integer euismod justo a ligula gravida, at convallis dolor dictum. Sed in turpis vel urna egestas tincidunt eget id tortor. Vivamus consectetur justo sed feugiat pellentesque.</p>
+<p>Worked with Walmart and American Beverage Association on a series of grassroots and grass-tops public affairs campaigns, which included website development, programmatic digital ad buys, TV ad production and placement, as well as paid and organic social media amplification driving audience awareness and key conversions. </p>
+
+
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

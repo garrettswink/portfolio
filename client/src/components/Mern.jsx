@@ -15,14 +15,14 @@ export default function Mern() {
         </div>
 
         <div className="mern-summary">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>I specialize in building robust, engaging, and secure websites utilizing my expertise in the cutting-edge MERN stack (MongoDB, Express.js, React.js, and Node.js). I have worked with clients such as the American Beverage Association, Ardent Mills, Fiat Chrysler Automobiles, and Nestlé to ensure a user experience that fulfills client conversion benchmarks and content geared toward search engine optimization. </p>
         </div>
         
         <div className="mern-body">
           <MernCard
             title="MongoDB"
             logo={MongoLogo}
-            description="I am adept at designing and managing NoSQL databases using MongoDB, ensuring efficient data storage and retrieval for web applications."
+            description="I am adept at building and managing NoSQL databases using MongoDB, ensuring efficient and secure data storage and retrieval for web applications."
           />
           <MernCard
             title="Express"
@@ -32,7 +32,7 @@ export default function Mern() {
           <MernCard
             title="React"
             logo={ReactLogo}
-            description="I desgin interactive and user-friendly user interfaces in React, utilizing state management, component lifecycles, and third party libraries to enhance the overall user experience."
+            description="I design interactive and user-friendly user interfaces in React, utilizing state management, component lifecycles, and third-party libraries to enhance the overall user experience."
           />
           <MernCard
             title="Node"
