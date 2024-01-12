@@ -21,6 +21,9 @@ export default function Contact() {
         data
       );
       console.log(response.data);
+
+      setEmail("");
+      setMessage("");
     } catch (error) {
       console.error("Error sending email:", error);
     }
@@ -34,13 +37,7 @@ export default function Contact() {
         </div>
 
         <div className="contact-overview-container">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
-            reprehenderit vero eius cum nesciunt saepe sint, consectetur quis
-            animi nemo ipsum laboriosam. Necessitatibus tempora porro aliquid
-            consequatur. Deleniti praesentium ratione temporibus aliquid
-            repudiandae, excepturi iure incidunt possimus, magni sit?
-          </p>
+          <p>If you have any questions, inquiries, or would like to discuss potential projects, please feel free to get in touch using the below contact form, or by reaching out to me directly at garrettswink@outlook.com.</p>
         </div>
 
         <div className="contact-form-container">
