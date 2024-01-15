@@ -4,14 +4,23 @@ import Button from "react-bootstrap/Button";
 import { useState } from "react";
 import axios from "axios";
 
-
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
+  const validateEmail = (email) => {
+    return email.includes("@") && email.includes(".com");
+  };
 
   const sendEmail = async (e) => {
     e.preventDefault();
+
+    if (!validateEmail(email) || message.length < 1) {
+      alert("Please enter a valid email and message!");
+      return;
+    }
+
     const data = {
       email,
       message,
@@ -26,10 +35,9 @@ export default function Contact() {
 
       setEmail("");
       setMessage("");
-   
+      setShowConfirmation(true);
     } catch (error) {
       console.error("Error sending email:", error);
-    
     }
   };
 
@@ -41,7 +49,12 @@ export default function Contact() {
         </div>
 
         <div className="contact-overview-container">
-          <p>If you have any questions, inquiries, or would like to discuss potential projects, please feel free to get in touch using the below contact form, or by reaching out to me directly at garrettswink@outlook.com.</p>
+          <p>
+            If you have any questions, inquiries, or would like to discuss
+            potential projects, please feel free to get in touch using the below
+            contact form, or by reaching out to me directly at
+            garrettswink@outlook.com.
+          </p>
         </div>
 
         <div className="contact-form-container">
@@ -61,22 +74,29 @@ export default function Contact() {
               controlId="exampleForm.ControlTextarea1"
             >
               <Form.Label>Message:</Form.Label>
-              <Form.Control 
-              as="textarea" 
-              rows={8} 
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              <Form.Control
+                as="textarea"
+                rows={8}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               />
             </Form.Group>
             {/* 🔥🔥🔥Button🔥🔥🔥 */}
-        <div className="contact-form-button-container">
-          <Button variant="danger" type="submit">
-            Submit
-          </Button>
-        </div>
+            <div className="contact-form-button-container">
+              <Button variant="danger" type="submit">
+                Submit
+              </Button>
+            </div>
           </Form>
         </div>
+
+        {showConfirmation && (
+          <div className="confirmation-message">
+            <p>Your message has been successfully sent!</p>
+          </div>
+        )}
       </div>
     </>
   );
 }
+
