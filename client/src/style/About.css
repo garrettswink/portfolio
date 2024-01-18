@@ -35,3 +35,28 @@
     width: 525px;
     font-size: 15px;
 }
+
+@media (max-width: 600px) {
+    .about-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .profile-picture-container, .overview-copy-container,  .overview-headline {
+        width: 100%;
+        height: auto;
+        margin-left: 30%;
+    }
+
+    .profile-picture-container img {
+        height: auto;
+        max-width: 80%;
+        margin-top: 25px;
+    }
+
+    .overview-body {
+        width: auto;
+        font-size: 14px;
+        text-align: justify;
+    }
+}
