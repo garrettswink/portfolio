@@ -53,4 +53,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}@media (max-width: 600px) {
+    .nav-container {
+        /* Adjust the height if necessary, and ensure full width */
+        height: auto;
+        width:100%;
+    }
+
+    .hamburger-container {
+        /* Adjust width to a smaller percentage or fixed size */
+        display: none; /* or fixed width like 60px */
+        /* Optional: adjust the border and background styles if needed */
+    }
+
+    .hamburger-container h1 {
+        /* Adjust font size for smaller screens */
+        font-size: small;
+        display: hidden;
+    }
+
+    .copy-container {
+        /* Hide or adjust the position of additional text */
+        display: none; /* or adjust margins */
+    }
+
+    .masthead-container {
+        /* Adjust width */
+        width: 100%; /* Adjust based on available space */
+        /* Optional: adjust the border and background styles if needed */
+    }
+
+    .masthead-container img {
+        /* Adjust the image size if necessary */
+        height: 50px; /* or a smaller fixed height */
+    }
+
+    .contact-button-container {
+        /* Adjust width */
+        width: 20%; /* or fixed width like 60px */
+        /* Optional: adjust the border and background styles if needed */
+        display: none;
+    }
 }
+
+

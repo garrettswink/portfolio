@@ -25,9 +25,54 @@
     height: 300px;
 }
 
+/* For Mobile */
+.programming-group{
+    display: none;
+}
+/* For Mobile */
+.programming-group img{
+    height: 130px;
+    margin-left: 25%;
+}
+
 .programming-body {
     height: 500px;
     width: 1000px;
     margin: 10px;
     display: flex;
+}
+
+
+@media (max-width: 600px) {
+    .programming-container {
+        /* Adjust the height and margin for smaller screens */
+        height: auto;
+        margin-top: 25px;
+    }
+
+    .programming-header {
+        /* Make the header fit the width of smaller screens */
+        width: 100%;
+        margin-top: 25px;
+        margin-left: 50%;
+    }
+
+    .programming-summary {
+        /* Adjust the width and margin for smaller screens */
+        width: 90%;
+        margin: 25px auto;
+        height: auto;
+        margin-left: 30%;
+    }
+
+    /* Mobile Setting: Turns off Card div */
+    .programming-body {
+       display: none;
+    }
+    /* Switches on Static Screen Shot for Mobile */
+    .programming-group{
+        display: block;
+    }
+
+
 }

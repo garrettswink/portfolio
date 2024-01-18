@@ -43,3 +43,14 @@
   justify-content: center; /* Center horizontally */
   align-items: center;
 }
+
+@media (max-width: 480px) {
+    .contact-header-container, .contact-overview-container, .contact-form-container {
+        width: 100%; /* Adjust width to 100% for mobile */
+        margin-left: 50%;
+        padding: 0 20px; /* Add some padding */
+    }
+    .contact-form-button-container {
+        margin-left: -50%;
+    }
+}

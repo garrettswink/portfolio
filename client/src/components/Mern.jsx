@@ -4,6 +4,7 @@ import MongoLogo from "../assets/mongo_logo.jpg";
 import ExpressLogo from "../assets/express.png";
 import ReactLogo from "../assets/react.png";
 import NodeLogo from "../assets/node.png";
+import mernGroup from "../assets/mern-group.png"
 
 export default function Mern() {
   return (
@@ -16,6 +17,10 @@ export default function Mern() {
 
         <div className="mern-summary">
           <p>I specialize in building robust, engaging, and secure websites utilizing my expertise in the cutting-edge MERN stack (MongoDB, Express.js, React.js, and Node.js). I have worked with clients such as the American Beverage Association, Ardent Mills, Fiat Chrysler Automobiles, and Nestlé to ensure a user experience that fulfills client conversion benchmarks and content geared toward search engine optimization. </p>
+        </div>
+
+        <div className="mern-group">
+          <img src={mernGroup}></img>
         </div>
         
         <div className="mern-body">

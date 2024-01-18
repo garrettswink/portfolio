@@ -32,6 +32,47 @@
    display: flex;
 }
 
+/* Mobile Element */
+.mern-group {
+    display: none;
+}
+/* Mobile Element */
+.mern-group img{
+    height: 130px;
+    margin-left: 25%;
+  
+}
+
+@media (max-width: 600px) {
+    .mern-container {
+        /* Adjust margins and potentially height for smaller screens */
+        margin-top: 25px;
+        height: auto;
+    }
+
+    .mern-header {
+        width: 100%;
+        margin-left: 50%;
+    }
+
+    .mern-summary {
+        /* Adjust width and margin to fit within smaller screens */
+        width: 90%;
+        margin: 25px auto;
+        height: auto;
+        margin-left: 30%;
+    }
+
+    .mern-body {
+        display: none;
+    }
+
+    .mern-group {
+        display:block;
+    }
+
+  
+}
 
 
 

@@ -5,10 +5,8 @@
     justify-content: center; 
     align-items: center; 
     flex-direction: column; 
-    margin-bottom: 275px;
+    margin-bottom: 225px;
     margin-top: 130px;
-   
-   
 }
 
 .agency-experience-header {
@@ -26,7 +24,6 @@
     height: 300px;
 }
 
-
 .agency-experience-body {
     height: 300px;
     width: 1000px;
@@ -35,4 +32,37 @@
 
 .accordion-body{
     background-color: whitesmoke;
+}
+
+@media (max-width: 600px) {
+    .agency-experience-container {
+        /* Adjust margins and potentially height for smaller screens */
+        margin-top: 35px; /* Reduced from 130px */
+        margin-bottom: 50px; /* Reduced from 275px */
+        height: auto;
+    }
+
+    .agency-experience-header {
+        /* Make the header fit the width of smaller screens, adjust font size if necessary */
+        width: 100%;
+        margin-left: 50%;
+        margin-bottom: 10px; /* Adjusted from 20px */
+    }
+
+    .agency-summary {
+        /* Adjust width and margin to fit within smaller screens */
+        width: 90%;
+        margin: 25px auto;
+        height: auto; /* Adjust height as needed */
+        margin-left: 30%;
+    }
+
+    .agency-experience-body {
+        /* Adapt layout and size for smaller screens */
+        width: 130%;
+        margin-top: 10px; /* Adjusted from 20px */
+        height: auto; /* Adjust height as needed */
+        margin-left: 65%;
+        margin-bottom: 25px;
+    }
 }

@@ -40,3 +40,35 @@
     width: 30%;
     background-color: black;
 }
+
+@media (max-width: 600px) {
+    .footer-container {
+        /* Flex direction change to stack elements vertically */
+       
+        height: auto; /* Adjust height to accommodate stacked items */
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+       
+    }
+
+    .social-media-container,
+    .copyright-container,
+    .right-container {
+        /* Set width to 100% to fill the container horizontally */
+        width: 200%;
+        height: auto; /* Adjust height if necessary */
+        border: none; /* Optional: remove borders for a cleaner look */
+    }
+
+    .social-media-icon {
+        /* Adjust margin and potentially size for smaller screens */
+        margin: 0 10px; /* Reduced margin */
+        height: 40px; /* Optional: adjust size if necessary */
+    }
+
+    .copyright-container {
+        /* Adjust font size for smaller screens if necessary */
+        font-size: small;
+    }
+}

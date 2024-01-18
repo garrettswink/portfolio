@@ -5,7 +5,7 @@
     flex-direction: column; 
     height: 500px;
     width: 100%; 
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .integrated-header {
@@ -32,3 +32,43 @@
    display: flex;
 }
 
+/* For Mobile Display */
+.integrated-group {
+    display: none;
+}
+
+/* For Mobile Display */
+.integrated-group img {
+    height: 130px;
+    margin-left: 25%;
+}
+
+@media (max-width: 600px) {
+    .integrated-container {
+        /* Adjust the margin and potentially the height for smaller screens */
+        margin-top: 60px; /* Reduced from 120px */
+        height: auto;
+    }
+
+    .integrated-header {
+        /* Adjust width to fit smaller screens, and possibly font size if needed */
+        width: 100%;
+        margin-left: 50%;
+    }
+
+    .integrated-summary {
+        /* Adjust width and margin to fit within smaller screens */
+        width: 100%;
+        margin: 25px auto;
+        height: auto; /* Adjust height as needed */
+        margin-left: 30%;
+    }
+
+    .integrated-body {
+       display: none;
+    }
+
+    .integrated-group {
+        display: block;
+    }
+}

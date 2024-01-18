@@ -61,3 +61,29 @@
     color: white;
     font-size: 30px;
 }
+
+@media (max-width: 600px) {
+    .mern-card-body {
+        /* Reduce the size of the card for mobile screens */
+        height: 200px; /* Adjust height as needed */
+        width: 200px; /* Adjust width as needed */
+        margin-left: 5px; /* Reduce margin */
+        margin-right: 5px; /* Reduce margin */
+    }
+
+    .mern-card-image {
+        /* Adjust the height to match the new card size */
+        height: 160px; /* Adjust height as needed */
+    }
+
+    .mern-card-description {
+        /* Adjust the height to match the new image size */
+        height: 160px; /* Adjust height as needed */
+        padding: 8px; /* Adjust padding as needed */
+    }
+
+    .mern-card-title {
+        /* Adjust font size for smaller screens */
+        font-size: 20px; /* Adjust font size as needed */
+    }
+}

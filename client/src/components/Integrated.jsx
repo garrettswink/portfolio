@@ -6,6 +6,7 @@ import SEO from "../assets/seo.png";
 import Social from "../assets/social.png"
 import Google from "../assets/google.png"
 import Amazon from "../assets/amazon.png"
+import IntegratedGroup from "../assets/integrated-group.png"
 
 
 export default function Integrated() {
@@ -17,9 +18,13 @@ export default function Integrated() {
         </div>
 
         <div className="integrated-summary">
-<p>In addition to web development, I provide consultation and complimenting holistic digital amplification strategies that raise awareness and drive users to a website landing page for key conversions like sign-up or product purchase. Digital amplification campaigns include comprehensive strategy documents outlining objectives, miles stones, and measures of success — in addition to a final report that clearly demonstrates how funds were allocated across channels to achieve key performance indicators and metrics.</p>
-
+            <p>In addition to web development, I provide consultation and complimenting holistic digital amplification strategies that raise awareness and drive users to a website landing page for key conversions like sign-up or product purchase. Digital amplification campaigns include comprehensive strategy documents outlining objectives, miles stones, and measures of success — in addition to a final report that clearly demonstrates how funds were allocated across channels to achieve key performance indicators and metrics.</p>
         </div>
+
+        <div className="integrated-group">
+        <img src={IntegratedGroup}></img>
+        </div>
+
         <div className="integrated-body">
           <MernCard 
           title="Social Media" 

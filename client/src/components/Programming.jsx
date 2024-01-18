@@ -4,6 +4,7 @@ import Python from "../assets/python2.png"
 import SQL from "../assets/sql.png"
 import Django from "../assets/django.png"
 import MySQL from "../assets/MySQL-Logo.jpg"
+import ProgrammingGroup from "../assets/programming-group.png"
 
 export default function Additional(){
     return (
@@ -15,6 +16,10 @@ export default function Additional(){
 
             <div className="programming-summary">
                 <p>Leveraging an in-depth understanding of Python and SQL, I architect and implement comprehensive database systems that ensure robust security and high performance. My approach integrates the Django framework and MySQL, enabling me to devise program logic and data solutions that are both scalable and meticulously safeguarded.</p>
+            </div>
+
+            <div className="programming-group">
+                <img src={ProgrammingGroup}></img>
             </div>
 
             <div className="programming-body">
