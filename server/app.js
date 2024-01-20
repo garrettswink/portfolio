@@ -3,6 +3,9 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const sendEmail = require("./utils/sendEmail");
+// 🔥🔥🔥New🔥🔥🔥
+const path = require('path'); 
+
 
 const app = express();
 
@@ -11,10 +14,10 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors());
 
-// Route
-app.get("/", (req, res) => {
-  res.send("Home Page");
-});
+// Route 🔥🔥🔥REMOVED FOR TESTING. Delete or reimplement based on testing🔥🔥🔥
+// app.get("/", (req, res) => {
+//   res.send("Home Page");
+// });
 
 // Route test: http://localhost:3001/api/sendemail
 app.post("/api/sendemail", async (req, res) => {
@@ -34,6 +37,12 @@ app.post("/api/sendemail", async (req, res) => {
   } catch (error) {
     res.status(500).json(error.message);
   }
+});
+
+app.use(express.static(path.join(__dirname, '../client/dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 });
 
 const PORT = process.env.PORT || 3001;
