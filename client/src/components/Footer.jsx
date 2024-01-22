@@ -1,5 +1,5 @@
 import "../style/Footer.css"
-import LinkedIn from "../assets/linkedin.png"
+import LinkedIn from "../assets/LinkedIn.png"
 import GitHub from "../assets/github.png"
 
 export default function Footer(){
